@@ -14,7 +14,7 @@ var options = {
     console.log('Longitud: ' + coordenadas.longitude);
     console.log('Más o menos ' + coordenadas.accuracy + ' metros.');
 
-    await fetch('http://localhost:8080/qt/getNearby',{
+    await fetch('http://192.168.38.65:8080/qt/getNearby',{
         method:'POST',
         body : JSON.stringify({
             "latitud" : coordenadas.latitude,
